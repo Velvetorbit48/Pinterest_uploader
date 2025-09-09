@@ -1,0 +1,231 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>PinFlow — Automated Pinterest Uploader · Landing Page</title>
+  <meta name="description" content="PinFlow — lightweight, secure automated Pinterest uploader. OAuth-based login, bulk scheduling, media optimization and enterprise-ready controls. Perfect for solo creators and small teams.">
+  <style>
+    :root{--accent:#bd081c;--bg:#f7f7f8;--muted:#666;--card:#fff}
+    *{box-sizing:border-box}
+    body{font-family:Inter,system-ui,-apple-system,Segoe UI,Roboto,'Helvetica Neue',Arial; margin:0;background:var(--bg);color:#111}
+    header{background:linear-gradient(180deg,rgba(189,8,28,0.06),transparent);padding:24px 16px;border-bottom:1px solid rgba(0,0,0,0.04)}
+    .container{max-width:980px;margin:0 auto;padding:24px}
+    nav{display:flex;gap:16px;align-items:center;justify-content:space-between}
+    nav .brand{display:flex;gap:12px;align-items:center}
+    .logo{width:44px;height:44px;border-radius:8px;background:var(--accent);display:flex;align-items:center;justify-content:center;color:#fff;font-weight:700}
+    .hero{display:grid;grid-template-columns:1fr 360px;gap:32px;align-items:center;padding:48px 0}
+    .hero h1{font-size:34px;margin:0 0 12px}
+    .lead{color:var(--muted);margin-bottom:20px}
+    .cta{display:flex;gap:12px}
+    .btn{padding:12px 16px;border-radius:10px;border:0;font-weight:600;cursor:pointer}
+    .btn-primary{background:var(--accent);color:#fff}
+    .btn-ghost{background:transparent;border:1px solid rgba(0,0,0,0.06)}
+    .card{background:var(--card);padding:18px;border-radius:12px;box-shadow:0 6px 18px rgba(15,15,15,0.06)}
+    ul.features{list-style:none;padding:0;margin:0;display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}
+    ul.features li{padding:12px;border-radius:8px;border:1px solid rgba(0,0,0,0.04);background:linear-gradient(180deg,rgba(255,255,255,0.4),transparent)}
+    section{margin:28px 0}
+    h2{margin:0 0 12px}
+    .grid-3{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+    footer{padding:28px 0;color:var(--muted);font-size:13px}
+    code{background:#f2f2f2;padding:2px 6px;border-radius:6px;font-family:monospace}
+    @media (max-width:900px){.hero{grid-template-columns:1fr;}.grid-3{grid-template-columns:1fr}.ul.features{grid-template-columns:1fr}}
+  </style>
+</head>
+<body>
+  <header>
+    <div class="container">
+      <nav>
+        <div class="brand">
+          <div class="logo">PF</div>
+          <div>
+            <strong>PinFlow</strong>
+            <div style="font-size:13px;color:var(--muted)">Automated Pinterest uploader — unofficial tool</div>
+          </div>
+        </div>
+        <div style="display:flex;gap:10px;align-items:center">
+          <a class="btn btn-ghost" href="#docs">Docs</a>
+          <a class="btn btn-ghost" href="#faq">FAQ</a>
+          <a class="btn btn-primary" href="#get-started">Get Started</a>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="hero">
+      <div>
+        <h1>Automate publishing to Pinterest — securely and reliably</h1>
+        <p class="lead">PinFlow is a lightweight, developer-focused uploader that streamlines how creators and small teams publish Pins. OAuth-driven authorization, scheduled bulk uploads, templated descriptions and automatic image optimization make repetitive workflows dependable and repeatable.</p>
+
+        <div class="cta">
+          <a class="btn btn-primary" href="#get-started">Start with GitHub Pages</a>
+          <a class="btn btn-ghost" href="#privacy">Privacy & Security</a>
+        </div>
+
+        <section style="margin-top:28px">
+          <h2>Who this is for</h2>
+          <p style="color:var(--muted)">PinFlow is built for independent creators, marketers and small agencies who need predictable, repeatable Pin publishing without complex infrastructure. It is ideal when you:</p>
+          <ul style="color:var(--muted)">
+            <li>Manage dozens or hundreds of Pins per month</li>
+            <li>Want schedule-based publishing and template-driven content</li>
+            <li>Prefer ownership of your assets and a clear audit trail</li>
+          </ul>
+        </section>
+      </div>
+
+      <aside>
+        <div class="card">
+          <h3 style="margin-top:0">Core features</h3>
+          <ul class="features" style="margin-top:12px">
+            <li><strong>OAuth 2.0</strong><div style="font-size:13px;color:var(--muted)">Secure Pinterest authorization flow</div></li>
+            <li><strong>Bulk upload</strong><div style="font-size:13px;color:var(--muted)">CSV-driven imports and batch processing</div></li>
+            <li><strong>Scheduling</strong><div style="font-size:13px;color:var(--muted)">Timezone-aware publish scheduling</div></li>
+            <li><strong>Templates</strong><div style="font-size:13px;color:var(--muted)">Reusable descriptions, hashtags and tags</div></li>
+            <li><strong>Image optimization</strong><div style="font-size:13px;color:var(--muted)">Auto-format/resize for best Pinterest rendering</div></li>
+            <li><strong>Audit logs</strong><div style="font-size:13px;color:var(--muted)">Track who published what and when</div></li>
+          </ul>
+          <div style="margin-top:14px;font-size:13px;color:var(--muted)">Note: PinFlow is not affiliated with Pinterest, Inc. Use is subject to Pinterest developer terms and API rules.</div>
+        </div>
+
+        <div style="height:16px"></div>
+
+        <div class="card">
+          <h4 style="margin:0 0 10px">Quick start</h4>
+          <ol style="margin:0;padding-left:18px;color:var(--muted)">
+            <li>Create a GitHub repository and add this <code>index.html</code> as your site root.</li>
+            <li>Enable GitHub Pages on the repository (Branch: main, folder: /).</li>
+            <li>Register a Pinterest Developer app; set your site URL & redirect URI to your GitHub Pages URL.</li>
+            <li>Use the OAuth flow to obtain a long-lived token for your account or team.</li>
+          </ol>
+        </div>
+      </aside>
+    </section>
+
+    <section id="how-it-works">
+      <h2>How PinFlow works — a concise overview</h2>
+      <p style="color:var(--muted)">PinFlow is intentionally minimalist: the landing page acts as the public redirect destination and verification endpoint for Pinterest's developer tools while the uploader logic runs independently (self-hosted scripts, CI jobs, or simple serverless functions). This keeps the surface area small and easy to verify for Pinterest's app review process.</p>
+
+      <div class="grid-3" style="margin-top:18px">
+        <div class="card">
+          <h3>1. Authorize</h3>
+          <p style="color:var(--muted)">Users complete Pinterest OAuth in a secure browser session. PinFlow stores only the OAuth token and minimal metadata required to publish on behalf of the user.</p>
+        </div>
+        <div class="card">
+          <h3>2. Prepare</h3>
+          <p style="color:var(--muted)">Create pin templates, import a CSV of items or upload images. Use the UI or a developer script to preprocess images and descriptions.</p>
+        </div>
+        <div class="card">
+          <h3>3. Publish</h3>
+          <p style="color:var(--muted)">Schedule or trigger uploads. PinFlow performs API calls to Pinterest to create Pins and logs each action for traceability.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="privacy">
+      <h2>Privacy & data handling (summary)</h2>
+      <p style="color:var(--muted)">We prioritize minimal data collection and transparent handling. Below is a plain-language summary of what a GitHub Pages + PinFlow deployment typically collects and how it is used. This is a sample policy — adapt it for your jurisdiction and consult legal counsel for production use.</p>
+
+      <h3>Data we collect</h3>
+      <ul style="color:var(--muted)">
+        <li><strong>OAuth tokens:</strong> Stored to authenticate with Pinterest on behalf of an account. Tokens are encrypted at rest.</li>
+        <li><strong>Pin metadata:</strong> Titles, descriptions, destination URLs, publish schedule and tags to build the Pin request payload.</li>
+        <li><strong>Uploaded media:</strong> Images you choose to publish. If you host media in third-party storage, we store only references/URLs.</li>
+        <li><strong>Audit logs:</strong> Non-sensitive operational records showing who initiated publishes and when.</li>
+      </ul>
+
+      <h3>How we use data</h3>
+      <p style="color:var(--muted)">Data is used exclusively to create and schedule Pins as you instruct. We do not sell personal data. Tokens are used only to access Pinterest API endpoints required for publishing and are revoked upon user request.</p>
+
+      <h3>Third-party services</h3>
+      <p style="color:var(--muted)">PinFlow leverages the Pinterest API and optionally image storage or CDN services chosen by you. When enabling analytics or other integrations, those services may collect additional usage data — make sure to disclose those services in your final privacy policy.</p>
+
+      <h3>User rights & contact</h3>
+      <p style="color:var(--muted)">You may request token revocation, data deletion or a copy of your data by contacting the site administrator at <a href="mailto:you@yourdomain.com">you@yourdomain.com</a>. Implement these requests promptly to stay compliant with applicable local laws.</p>
+
+      <p style="font-size:13px;color:var(--muted)">This page contains a fuller sample Privacy Policy and a minimal Impressum / terms section below, intended to make GitHub Pages verification and developer review straightforward.</p>
+    </section>
+
+    <section id="sample-privacy-policy">
+      <h2>Sample Privacy Policy (editable)</h2>
+      <p style="color:var(--muted)">The text below is a concise privacy policy example. Replace placeholders (e.g., <code>[YOUR NAME]</code>, <code>[CONTACT EMAIL]</code>) with your real details before publishing.</p>
+
+      <div class="card">
+        <h3 style="margin-top:0">Privacy Policy</h3>
+        <p><strong>Effective date:</strong> [YYYY-MM-DD]</p>
+
+        <p><strong>Introduction.</strong> This website (<em>PinFlow demo</em>) provides a simple interface and verification endpoint for an automated Pinterest publishing workflow. The operator of this site is <code>[YOUR NAME / COMPANY]</code> located at <code>[ADDRESS]</code>. This policy explains how we collect, use, and share information when you authorize PinFlow to publish Pins on your behalf.</p>
+
+        <p><strong>Information we collect.</strong> We collect the minimum data required to perform publishing operations: (1) OAuth tokens and basic account metadata from Pinterest to publish Pins, (2) Pin content you submit (titles, descriptions, destination URLs, tags), and (3) media files that you upload or reference for publishing.</p>
+
+        <p><strong>How we use information.</strong> We use the data to create, schedule and manage Pins according to your instructions. We do not use your data for advertising purposes and do not sell personal data to third parties.</p>
+
+        <p><strong>Data retention.</strong> OAuth tokens and publishing metadata are retained while your account is active and for as long as required to provide the service. You can request revocation or deletion of your data by contacting <code>[CONTACT EMAIL]</code>.</p>
+
+        <p><strong>Security.</strong> We use industry-standard encryption for data in transit and at rest when hosted on legitimate storage providers. You are responsible for securing any credentials or secrets you store in your own deployment.</p>
+
+        <p><strong>Third-party services.</strong> We use the Pinterest API for publishing. Any optional third-party storage or analytics services you enable will have their own privacy practices which you should disclose separately.</p>
+
+        <p><strong>Contact.</strong> Questions or requests regarding this policy should be sent to <a href="mailto:you@yourdomain.com">you@yourdomain.com</a>.</p>
+
+        <p style="font-size:13px;color:var(--muted)">This sample policy is provided for convenience and does not constitute legal advice. Review and adapt it with qualified counsel for your jurisdiction.</p>
+      </div>
+    </section>
+
+    <section id="impressum">
+      <h2>Impressum / Legal notice</h2>
+      <div class="card">
+        <p style="margin:0;color:var(--muted)"><strong>Site operator:</strong> [YOUR NAME / COMPANY]</p>
+        <p style="margin:0;color:var(--muted)"><strong>Address:</strong> [STREET, ZIP, CITY, COUNTRY]</p>
+        <p style="margin:0;color:var(--muted)"><strong>Contact:</strong> <a href="mailto:you@yourdomain.com">you@yourdomain.com</a></p>
+        <p style="margin-top:12px;color:var(--muted)"><strong>Disclaimer:</strong> This site and the PinFlow project are independent and are not affiliated with or endorsed by Pinterest, Inc. Use of the Pinterest API is subject to Pinterest's developer agreement and acceptable use policies.</p>
+      </div>
+    </section>
+
+    <section id="faq">
+      <h2>Frequently asked questions</h2>
+      <div style="display:grid;gap:12px">
+        <div class="card">
+          <h3 style="margin:0 0 8px">Do I need a company website to use the Pinterest API?</h3>
+          <p style="color:var(--muted)">Pinterest typically requires a verifiable website and a clear privacy policy for developer app registration. A GitHub Pages site with a visible Impressum and privacy policy is accepted in most cases for initial verification.</p>
+        </div>
+
+        <div class="card">
+          <h3 style="margin:0 0 8px">Is PinFlow storing my Pinterest password?</h3>
+          <p style="color:var(--muted)">No. PinFlow uses the OAuth flow and stores only tokens issued by Pinterest. You retain control and can revoke access at any time through Pinterest or by contacting the site operator.</p>
+        </div>
+
+        <div class="card">
+          <h3 style="margin:0 0 8px">Is this official Pinterest software?</h3>
+          <p style="color:var(--muted)">No — this is an independent uploader built to work with Pinterest's developer API. Always review Pinterest's Terms of Service before automating account actions.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="get-started">
+      <h2>Get started — deployment checklist</h2>
+      <ol style="color:var(--muted)">
+        <li>Create a new GitHub repository and add this <code>index.html</code> as the site root.</li>
+        <li>Push to the <code>main</code> branch and enable GitHub Pages under Settings → Pages (source: main / root).</li>
+        <li>Register a Pinterest Developer application and set the website URL to your GitHub Pages URL (for example: <code>https://your-username.github.io/your-repo/</code>).</li>
+        <li>Configure the OAuth redirect URI to the same GitHub Pages URL (append a path if required, e.g., <code>/auth/callback</code>).</li>
+        <li>Test the OAuth flow locally and in production — ensure tokens are encrypted in storage and revoke tokens in Pinterest to test cleanup.</li>
+      </ol>
+
+      <p style="color:var(--muted)">If you want, I can produce a ready-to-use <code>README.md</code> with exact commands to deploy to GitHub Pages, or a small serverless script example that demonstrates the OAuth exchange and a single Pin publish call.</p>
+    </section>
+
+    <footer>
+      <div style="display:flex;justify-content:space-between;align-items:center;gap:12px;flex-wrap:wrap">
+        <div>© <span id="year">2025</span> [YOUR NAME / COMPANY]. All rights reserved.</div>
+        <div style="color:var(--muted)"><a href="#privacy">Privacy</a> · <a href="#impressum">Impressum</a> · <a href="#faq">FAQ</a></div>
+      </div>
+    </footer>
+  </main>
+
+  <script>
+    // insert the current year dynamically
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
