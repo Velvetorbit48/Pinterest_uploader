@@ -84,4 +84,4 @@ https://<your-username>.github.io/pinterest-uploader-site/
 ## 📧 Contact
 For issues or customization help, reach out at:
 ```
-you@yourdomain.com
+
