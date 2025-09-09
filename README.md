@@ -1,7 +1,5 @@
 # PinFlow — Automated Pinterest Uploader Landing Page
 
-This repository hosts a **professional landing page** for a Pinterest Uploader project (PinFlow). The site is designed to run entirely on **GitHub Pages** and can be used to satisfy Pinterest Developer requirements (website + privacy policy + legal notice).
-
 ---
 
 ## 🚀 Features of the Landing Page
